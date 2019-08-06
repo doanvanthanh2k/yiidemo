@@ -1,7 +1,4 @@
 <?php
-use \yii\web\Request;
-$request = new Request(); 
-$baseUrl = str_replace('/frontend/web', '', $request->baseUrl);
 $params = array_merge(
     require __DIR__ . '/../../common/config/params.php',
     require __DIR__ . '/../../common/config/params-local.php',
@@ -39,24 +36,14 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-
-        'request'=>[
-            'baseUrl' =>$baseUrl 
-        ],
-        
+        /*
         'urlManager' => [
-            'baseUrl' =>$baseUrl ,
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                ''=>'site/index',
-                'about'=>'site/about',
-                'contact'=>'site/contact',
-                'signup'=>'site/signup',
-                'login'=>'site/login'
             ],
         ],
-        
+        */
     ],
     'params' => $params,
 ];

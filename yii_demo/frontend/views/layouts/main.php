@@ -44,6 +44,7 @@ AppAsset::register($this);
             $menuItems[] = ['label' => 'Đăng ký', 'url' => ['/site/signup']];
             $menuItems[] = ['label' => 'Đăng nhập', 'url' => ['/site/login']];
         } else {
+            // 'active' => in_array(\Yii::$app->controller->id,['experiences'])]; in đậm trang khi click
             $menuItems[] = ['label' => 'Kinh nghiệm', 'url' => ['/experiences'],'active' => in_array(\Yii::$app->controller->id,['experiences'])];
             $menuItems[] = ['label' => 'Thông tin cá nhân', 'url' => ['/user'],'active' => in_array(\Yii::$app->controller->id,['user'])];
             $menuItems[] = ['label' => 'Văn bản', 'url' => ['/document'],'active' => in_array(\Yii::$app->controller->id,['document'])];

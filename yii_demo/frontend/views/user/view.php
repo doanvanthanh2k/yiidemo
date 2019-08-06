@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="container">
     <div class="row">
         <div class="col-md-4">
-            <img src="../uploads/<?= Yii:: $app->user->identity->avatar; ?>" style="width: 100%;border-radius: 15px;" alt="">
+            <img src="uploads/<?= Yii:: $app->user->identity->avatar; ?>" style="width: 100%;border-radius: 15px;" alt="">
         </div>
 
         <div class="col-md-7">
